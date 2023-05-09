@@ -1,0 +1,108 @@
+* {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 22px;
+  font-family: "Helvetica", sans-serif;
+}
+body {
+  width: 100vw;
+  margin-bottom: 4px;
+  background-color: rgb(255, 255, 255);
+}
+
+#root {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+}
+
+section {
+  width: 98%;
+  height: 90%;
+  position: relative;
+  top: 55px;
+  margin: 0 2px;
+  padding: 10px 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+nav {
+  width: 98%;
+  height: 72px;
+  top: -5px;
+  margin: 5px 2px;
+  padding: 4px 16px;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.contentMenuLeft {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* começo do header */
+nav span {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 16px;
+}
+
+nav select {
+  border-style: none;
+  width: 80px;
+}
+
+.contentRight {
+  display: inline-block;
+  width: 5px;
+}
+
+nav input {
+  width: 60%;
+  height: 48px;
+  border-radius: 50px;
+  background-image: url(../assets/search.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 9%;
+  background-color: rgba(213, 213, 213, 0.662);
+  opacity: 0.5;
+}
+
+.contentNavLogo {
+  width: 28px;
+  height: 28px;
+  margin: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* section fotos */
+section img {
+  width: 14%;
+  margin: 5px 5px;
+  border-radius: 30px;
+  background-color: rgb(249, 249, 249);
+}
+
+/* alternância de encaixe de fotos */
+img:nth-child(even) {
+  top: 10px;
+  position: relative;
+  height: 300px;
+}
